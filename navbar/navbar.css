@@ -141,14 +141,7 @@ font-weight: bold;
         height:100%;
         font-size: 14px;
     }
-    #mens-page-button>a{
-        color: black;
-        text-decoration-line: none;
-    }
-    #mens-page-button>a:hover{
-        text-decoration-line: underline;
-        cursor: pointer;
-    }
+   
     #bottom-navbar_main>div>button:hover{
         text-decoration-line: underline;
         color: black;
@@ -173,6 +166,18 @@ font-weight: bold;
    position:fixed;
    margin: auto;
   left: 10%;
+}
+#dropdown_decor:hover .dropdown-content {
+    display: block;
+     position:fixed;
+     margin: auto;
+    left: 10%;
+}
+#dropdown_kitchen:hover .dropdown-content {
+    display: block;
+     position:fixed;
+     margin: auto;
+    left: 10%;
 }
 #dropdown_kids_baby:hover .dropdown-content {
   display: block;
@@ -241,8 +246,8 @@ width:100%;
     display: flex;
     justify-content: space-evenly;
     padding: 45px 25px;
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 25px;
+    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #545658;
     color: rgb(247, 242, 242);
@@ -250,16 +255,9 @@ width:100%;
 #footer-mid>div{
     width:15%;
 }
-#footer-mid-hidden-ele{
-  visibility: hidden;
-}
-#footer-mid-nykaa-logo{
- font-size: 20px;
- color: white;
- font-weight: bold;
-}
+
 #footer-mid-title{
- font-size: 15px;
+ font-size: 13px;
  color: white;
  font-weight: bold;
 }
