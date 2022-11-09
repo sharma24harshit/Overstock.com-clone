@@ -1,0 +1,137 @@
+#Deals {
+  text-align: center;
+}
+
+#top {
+  background-image: url("https://ak1.ostkcdn.com/images/products/is/images/direct/844ed34686c62e455fd2090fe29d86412331b092/LZRS-Oak-Wood-Freestanding-Pet-Gate-Wooden-Dog-Gates-for-Doorways-and-The-House-Freestanding-Safety-Fence.jpg?imwidth=480&impolicy=medium");
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: 70px 0px;
+  border-radius: 12px;
+}
+
+#Time_Deals {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#Time_Deals > div > img {
+  height: 190px;
+  width: 190px;
+  border-radius: 12px;
+}
+#Time_Deals > div > img + p {
+  font-weight: bolder;
+  text-align: center;
+  font-size: larger;
+}
+
+#deck {
+  background-image: url("https://ak1.ostkcdn.com/images/products/is/images/direct/2ffbaaa905ca3af3f34f64bcce7c20c2d9efbc6e/Holiday-Snowman-Christmas-Tree-Lighted-Canvas-Print.jpg?imwidth=480&impolicy=medium");
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: 70px 0px;
+}
+
+#fresh_js {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#fresh_js > div {
+  border-radius: 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.imag {
+  height: 170px;
+  width: 170px;
+}
+.dis {
+  font-size: large;
+  color: rgb(20, 13, 13);
+}
+
+#Seasonal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#Seasonal > div {
+  box-shadow: rgba(31, 63, 95, 0.3) 0px 1px 2px 0px;
+}
+#Seasonal > div > img {
+  width: 100%;
+  height: 400px;
+
+  border-radius: 12px;
+}
+#span {
+  text-align: center;
+  font-weight: bolder;
+}
+#Seasonal > div > p {
+  width: 80%;
+  margin: auto;
+}
+
+#top_guest {
+  background-image: url("https://ak1.ostkcdn.com/images/products/is/images/direct/ed2514df617827fd7c8d9eab896172c70f8a212d/alazyhome-Upholstered-Platform-Bed-Frame%2C-Easy-Assemble.jpg?imwidth=480&impolicy=medium");
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: 70px 0px;
+}
+#last_3 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+#last_3 > img {
+  height: 400px;
+  width: 500px;
+}
+#Style {
+  display: flex;
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#Style > div {
+  height: 450px;
+  width: 450px;
+  margin: auto;
+  padding-left: 20px;
+}
+#Style > div > img {
+  height: 300px;
+  width: 100%;
+}
+#Style > div >  p {
+  width: 69%;
+}
+#Style_Next_btn {
+  font-weight: bolder;
+  font-size: larger;
+  height: 50px;
+  width: 10%;
+  border: 0px;
+  background-color: rgb(95, 84, 84);
+  color: white;
+  margin-left: 45%;
+}
