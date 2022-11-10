@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/722f6b0acd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+
+        <div id="top-navbar">
+            <div id="top_navbar_main_div">
+                <div>Ships to:</div>
+                <div><img src="https://media.istockphoto.com/id/460844989/photo/the-indian-flag-with-horizontal-tricolor-design.jpg?s=612x612&w=0&k=20&c=HQqZ7MoU2RvkoD0VYdmR8Y-XWtuNifdaPPso8ow15CU=" alt="Flag image"></div>
+                <div>INDIA</div>
+            </div>
+        </div>
+
+        <div id="mid-navbar">
+
+            <div><a href="index.html"><img src="https://searchlogovector.com/wp-content/uploads/2018/09/overstock-logo-vector.png" alt="youtube log"></a></div>
+            <div>
+                <input type="text" id="search_term" placeholder="Search...everything you find ships for free"> 
+               <button onclick="searchVideos()"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+            
+            <div>
+                <div> <a ><i class="fa-regular fa-user"></i>  </a> </div>
+               <div> <a> <i class="fa-regular fa-heart"></i> </a> </div>
+               <div> <a> <i class="fa-solid fa-cart-shopping"></i> </a> </div>
+            </div>
+
+        </div>
+
+        <div id="bottom-navbar">
+            <div id="bottom-navbar_main">
+                <div id="dropdown_furniture">
+                    <button>Furniture</button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black">Living Room Furniture</a> <a>Sofas & Couches</a> <a>Sectionals</a> <a>Benches</a> <a>Ottomans & Poufs</a> <a>Accent Chairs</a>
+                         <a> Recliners</a> <a> Coffee & Accent Tables</a> <a> TV Stands</a> <a id="dropdown-black">Patio & Outdoor Furniture</a> <a> Patio Furniture Sets</a>
+                     <a> Sofas, Chairs & Sectionals</a> <a> Dining Sets</a> <a>Coffee & Side Tables </a> <a>Chaise Lounges</a> <a>Adirondack Chairs</a> 
+                     <a> Hammocks & Swings</a> <a>Outdoor Benches</a> 
+
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Bedroom Furniture</a> <a>Beds</a> <a>Bedroom Sets</a> <a>Headboards</a> <a>Bed Frames </a> <a>Dressers & Chests</a>
+                    <a>Nightstands</a> <a>Armoires & Wardrobes</a> <a>Mattresses</a> <a>Kids Beds</a> 
+                     <a id="dropdown-black">Office Furniture</a> <a>Desks</a> <a>Office Chairs</a>  <a>Small Space Desks</a> <a>Office Shelves & Storage</a>
+                      <a>File Cabinets</a> <a>Office & Conference Tables</a> <a>Bookshelves</a>
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Dining, Kitchen & Bar</a> <a>Kitchen & Dining Sets</a> <a>Kitchen & Dining Chairs</a> <a>Kitchen & Dining Tables</a>
+                     <a>Counter & Bar stools</a> <a>Bar Tables</a> <a>Buffets & Sideboards</a>
+                    <a>Home Bars</a> <a>Kitchen Islands & Carts</a> <a>Kitchen Furniture</a> <a id="dropdown-black">More</a> <a>Entryway</a>
+                     <a>Bathroom</a>  <a>Home Gym</a> <a>Recreation Room</a>  <a>Small Space Living</a> <a>Kids and Toddler Furniture</a> 
+                     <a>Baby Furniture</a>
+                           </div>
+
+                          <div class="column">
+                            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/65b210b92510c9b395c9b1c3caa8aff87da49132/Carisa-Swivel-Barrel-Chair-with-Open-Back%2CSet-of-2.jpg" alt="">
+                            <a id="dropdown-black">More Ways to Shop</a> <a>Featured Sales</a>
+                            <a>New Arrivals</a>  <a>Clearence</a> <a>Furniture Advice</a> 
+                          </div>
+
+                        </div>
+                      </div>
+                </div>
+<!-- //-------------------------------------------------------------------------------------------------------------// -->
+                <div id="dropdown_rugs">
+                    <button>Rugs</button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black">Area Rugs By Size</a> <a>3'x 5'</a> <a>4'x 6'</a> <a>5'x 8'</a> <a>6'x 9'</a> <a>7'x 9'</a>
+                    <a>8'x 10'</a> <a>9'x 12'</a> <a>10'x 14'</a> <a>Runner</a> <a id="dropdown-black">Trending Rugs</a> <a>Washable Rugs</a> 
+                     <a>Round Rugs</a> <a>Shag Rugs</a> <a>Wool Rugs</a> <a>Wool Rugs</a>  <a>Jute Rugs</a>
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Area Rugs By Color</a> <a>Grey</a> <a>Blue</a> <a>Ivory</a> <a>White</a> <a>Black</a>
+                    <a>Red</a>  <a>Brown</a>   <a>Orange</a> <a>Pink</a>  <a id="dropdown-black">Area Rugs By Style</a> <a>Modern & Contemporary</a> 
+                    <a>Bohemian & Eclectic</a> <a>Persian</a>   <a>Transitional</a> <a>Geometric</a>
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black">Rugs By Type</a> <a>Area Rugs</a> <a>Outdoor Rugs</a> <a>Rug Pads</a>
+                     <a>One of a Kind Rugs</a> <a>Kids & Tweens Rugs</a> <a>Door Mats</a>
+                    <a>Stair Treads</a> <a>Kitchen Mats & Rugs</a> <a>Bath Mats & Rugs</a> 
+                           </div>
+
+                          <div class="column">
+                            <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/b0ccd917a1f8f6f6fa1a6d30e0bee89c77ddd65a/Cerio-Abstract-Modern-Area-Rug.jpg?imwidth=320" alt="">
+                            <a id="dropdown-black">More Ways to Shop</a> <a>Featured Sales</a>
+                            <a>New Arrivals</a>  <a>Clearence</a> <a>Furniture Advice</a> 
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+<!-- //-------------------------------------------------------------------------------------------------------------// -->
+                <div>
+                    <button>Decor</button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black"></a> <a></a> <a></a> <a></a> <a></a> <a></a>
+                    <a></a> <a></a> <a></a> <a></a> 
+                            </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"> </a> <a> </a> <a> </a> <a> </a> <a> </a>
+                    <a>  </a> <a> </a> <a> </a> <a> </a>  <a> </a> <a> </a>
+                    <a> </a>   <a> </a> <a> </a>  <a> </a> <a> </a> 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"></a> <a></a> <a></a> <a></a>
+                     <a> </a> <a></a> <a></a>
+                    <a></a> <a id="dropdown-black"></a> 
+                    <a id="dropdown-black"> </a> <a></a> <a></a> <a></a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+            
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <button>Bedding</button>
+                </div>
+
+                <div>
+                    <button>Home Improvement</button>
+                </div>
+
+                <div>
+                    <button>Kitchen</button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black"></a> <a></a> <a></a> <a></a> <a></a> <a></a>
+                    <a></a> <a></a> <a></a> <a></a> 
+                            </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"> </a> <a> </a> <a> </a> <a> </a> <a> </a>
+                    <a>  </a> <a> </a> <a> </a> <a> </a>  <a> </a> <a> </a>
+                    <a> </a>   <a> </a> <a> </a>  <a> </a> <a> </a> 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"></a> <a></a> <a></a> <a></a>
+                     <a> </a> <a></a> <a></a>
+                    <a></a> <a id="dropdown-black"></a> 
+                    <a id="dropdown-black"> </a> <a></a> <a></a> <a></a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+            
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <button>Outdoor</button>
+                </div>
+
+                <div>
+                    <button>Lighting</button>
+                </div>
+
+                <div id="dropdown_kids_baby">
+                    <button id="mens-page-button"> <a href="./Mens page/mens.html">Kids & Baby</a></button>
+                    <div class="dropdown-content">
+                           
+                        <div class="row">
+                          <div class="column">
+                            <a id="dropdown-black"></a> <a></a> <a></a> <a></a> <a></a> <a></a>
+                    <a></a> <a></a> <a></a> <a></a> 
+                            </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"> </a> <a> </a> <a> </a> <a> </a> <a> </a>
+                    <a>  </a> <a> </a> <a> </a> <a> </a>  <a> </a> <a> </a>
+                    <a> </a>   <a> </a> <a> </a>  <a> </a> <a> </a> 
+                          </div>
+
+                          <div class="column">
+                    <a id="dropdown-black"></a> <a></a> <a></a> <a></a>
+                     <a> </a> <a></a> <a></a>
+                    <a></a> <a id="dropdown-black"></a> 
+                    <a id="dropdown-black"> </a> <a></a> <a></a> <a></a>
+                    <a></a>
+                           </div>
+
+                          <div class="column">
+            
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <button>More</button>
+                </div>
+
+                <div>
+                    <button>Ideas</button>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div id="footer">
+
+        <div id="footer-mid">
+
+            <div>
+                <p id="footer-mid-nykaa-logo">MY ACCOUNT</p>
+                <p>Oders & Returns</p>
+                <p>Email Preferences</p>
+                <p>Account Setting</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">LET US HELP</p>
+                <p>Contact Customer Care</p>
+                <p>Shipping Information</p>
+                <p>Return Policy</p>
+                <p>International Help</p>
+                <p>Accessibility</p>
+               
+            </div>
+
+            <div>
+                <p id="footer-mid-title">COMPANY INFORMATION</p>
+                <p>About Overstock</p>
+                <p>Contact Us</p>
+                <p>Carrers</p>
+                <p>Investors Relations</p>
+                <p>Sell Your products</p>
+                <p>Supply Chain Transparency</p>
+            </div>
+
+            <div>
+                <p id="footer-mid-title">MORE WAYS TO SHOP</p>
+                <p>Tips & Ideas</p>
+                <p>Deals</p>
+                <p>Clearence</p>
+                <p></p>
+            </div>
+
+        </div>
+        
+        <div id="footer-bottom">
+            <div> <p>Terms & Conditions  </p><p>Promotion Terms</p> <p>Cancellation Policy</p> <p>Privacy Policy</p></div>
+            <div>© Copyright 2022, Overstock.com®, Inc.</div>
+        </div>
+    </div>
+
+</body>
+</html>
