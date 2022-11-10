@@ -4,127 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/df10a141e6.js" crossorigin="anonymous"></script>
+    <title>Navbar</title>
     <link rel="stylesheet" href="./navbar.css">
-    <style>
-        body{
-            margin: 0%;
-            padding: 0%;
-        }
-      
-        #mainBody{
-            /* border: 2px solid green; */
-            height: auto;
-            width: 90%;
-            margin: auto;
-        }
-     
-        #div1{
-            display: flex;
-            /* border: 1px solid teal; */
-            justify-content: space-between;
-        }
-        #div1List{
-            /* border: 1px solid red; */
-            padding: 10px;
-            width: 30%;
-            margin-top: 30px;
-        }
-        #div1Img{
-            /* border: 1px solid blueviolet; */
-            background-image: url('https://ak1.ostkcdn.com/images/products/is/images/direct/0dd70ccfc76f1ed3f8be7f87aa1bfd0ffe310efb/3-seat-Linen-Fabric-Upholstered-Sofa-Sets-Living-Room-Furniture-Track-Arms-Couches-Hardwood-Frame-Sofa-with-Plastic-Leg.jpg?imwidth=480&impolicy=medium');
-            background-repeat: no-repeat;
-            background-size: 100% 110%;
-            width: 70%;
-            height: 400px;
-        }
-        #div1Img>div{
-            background: #0a0a0a;
-            opacity: .6; 
-
-            color: white;
-            width: 30%;
-            text-align: center;
-            padding: 10px;
-            margin-top: 70px;
-            margin-left: 20px;
-        }
-
-        #div1Img>div>button{
-            width: 90%;
-            background: #0a0a0a;
-            opacity: .7; 
-            color: white;
-            border: 1px solid white;
-            border-radius: 2px;
-            padding: 5px;
-        }
-        #div2{
-            display: flex;
-            /* border: 1px solid teal; */
-            justify-content: space-between;
-        }
-        #div2List{
-            /* border: 1px solid green; */
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            gap: 7px;
-            width: 25%;
-        }
-        #div2Second{
-            /* border: 1px solid red; */
-            width: 70%;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-        }
-
-        #div2Second>div{
-            border: 1px solid rgb(216, 216, 216);
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-        }
-        #div2Second>div>img{
-           /* width: 10%; */
-           /* height: 70%; */
-           width: 100%;
-        }
-         #div2Second>div>p{
-           font-size: 9px;
-           margin: 10px;
-        } 
-        h5{
-            color: red;
-            margin: 10px;
-        }
-        #btnDiv>div{
-            margin: auto;
-            /* border: 1px solid green; */
-            width: 70%;
-        }
-        .btnSearchAlso{
-            width: 18%;
-            font-size: 30%;
-            border: none;
-            border-radius: 15px;
-        }
-        #btnDiv>h4{
-            margin-left: 15%;
-
-        }
-        #divShort{
-            /* border: 1px solid rgb(0, 2, 128); */
-            display: flex;  
-            justify-content: flex-end;
-        }
-        #shortbyPrice{
-            color: #343333;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/722f6b0acd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="navbar">
@@ -190,7 +72,7 @@
                           </div>
 
                         </div>
-                    </div>
+                      </div>
                 </div>
 <!-- //-------------------------------------------------------------------------------------------------------------// -->
                 <div id="dropdown_rugs">
@@ -352,189 +234,6 @@
 
     </div>
 
-    <div id="mainBody">
-        <h1>Sofas & Couches</h1>
-        <div id="div1">
-            <div id="div1List">
-                <p>Sofas</p>
-                <p>Selection</p>
-                <p>Loveseats</p>
-                <p>Sleeper Sofas</p>
-                <p>Leather Sofas</p>
-                <p>Recliner Sofas</p>
-                <p>Shop all Sofas & Couches on Sale</p>
-            </div>
-            <div id="div1Img">
-                <div>
-                    <p>EARLY BLACK FRIDAY</p>
-                    <p>EXTRA 10% OFF SELECT SOFAS & COUCHES*</p>
-                    <button>SHOP NOW</button>
-                </div>
-            </div>
-        </div>
-        <div id="divShort">
-            <h5 id="shortbyPrice">Short By Price: 
-                <select id="selectTag">
-                    <option value="LowtoHigh">LowtoHigh</option>
-                    <option value="HightoLow">HightoLow</option>
-                </select>
-            </h5>
-            
-        </div>
-        <div id="div2">
-            <div id="div2List">
-               <select>
-                <option value="">Types</option>
-                <option value="Sofa">Sofa</option>
-                <option value="Recliner">Recliner</option>
-                <option value="Sets">Sets</option>
-                <option value="Settee">Settee</option>
-               </select>
-               <select>
-                <option value="">Upholstery Material</option>
-                <option value="">Leather</option>
-                <option value="">Micreofi</option>
-                <option value="">Vevet</option>
-                <option value="">Polyester</option>
-                <option value="">Linen</option>
-                <option value="">Faux Leather</option>
-                <option value="">Cotton</option>
-                <option value="">Chenille</option>
-               </select>
-               <select>
-                
-                    <option value="">Styles</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-             
-               </select>
-               <select>
-              
-                    <option value="">Arm Styles</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-        
-               </select>
-               <select>
-                    <option value="">Back Styles</option>
-                    <option value="">Prints</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-                    <option value="">Brand</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-                    <option value="">Prints</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-                    <option value="">Assembly</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-                    <option value="">Sales & Promotions</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-                    <option value="">Product Features</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-               </select>
-               <select>
-              
-                    <option value="">Customer Rating</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-         
-               </select>
-               <select>
-                
-                    <option value="">Availability</option>
-                    <option value="">Leather</option>
-                    <option value="">Micreofi</option>
-                    <option value="">Vevet</option>
-                    <option value="">Polyester</option>
-                    <option value="">Linen</option>
-                    <option value="">Faux Leather</option>
-                    <option value="">Cotton</option>
-                    <option value="">Chenille</option>
-              
-               </select>
-            </div>
-            <div id="div2Second"></div>
-        </div>
-    </div>
-
-    <div id="btnDiv">
-        <h4>Related Searches</h4>
-        <div>
-            <button class="btnSearchAlso"><p><i class="fa-solid fa-magnifying-glass"></i>  Leather Sofas</p></button>
-            <button class="btnSearchAlso"><p><i class="fa-solid fa-magnifying-glass"></i>  Recliner Sofas</p></button>
-            <button class="btnSearchAlso"><p><i class="fa-solid fa-magnifying-glass"></i>  Velvet Sofas,Couches & loveseats</p></button>
-            <button class="btnSearchAlso"><p><i class="fa-solid fa-magnifying-glass"></i>  Leather Reclining Sofas</p></button>
-            <button class="btnSearchAlso"><p><i class="fa-solid fa-magnifying-glass"></i>  Microfiber Sofas,Couches & loveseats</p></button> 
-        </div>
-    </div>
-
     <div id="footer">
 
         <div id="footer-mid">
@@ -575,14 +274,12 @@
             </div>
 
         </div>
-          
+        
         <div id="footer-bottom">
             <div> <p>Terms & Conditions  </p><p>Promotion Terms</p> <p>Cancellation Policy</p> <p>Privacy Policy</p></div>
             <div>© Copyright 2022, Overstock.com®, Inc.</div>
         </div>
     </div>
+
 </body>
 </html>
-<script src="./sofas.js">
-
-</script>
