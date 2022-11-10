@@ -1,23 +1,42 @@
 dataProducts = JSON.parse(localStorage.getItem("productsData"));
 
 function display(data) {
-    document.querySelector(".row").innerHTML = null;
+  let row = document.querySelector(".row");
+  document.querySelector(".row").innerHTML = null;
   
     data.forEach(function (el) {
-  
+      
       let product = document.createElement("div");
       product.className = "column";
   
-      let save = document.createElement("div")
-      let icon = document.createElement("img");
-      icon.src = "images/lightning-bolt.png";
-      icon.className = "icon";
-      save.innerText = el.save;
-      save.setAttribute("class", "save");
-      save.append(icon);
   
       let image = document.createElement("img");
       image.src = el.image;
+      
+      let cardInfo = document.createElement("div");
+      let priceRating = document.createElement("div");
+      let product_price = document.createElement("div");
+      let rating = document.createElement("div");
+      let font_title = document.createElement("p");
+
+      let current_price = document.createElement("div");
+      current_price.innerHTML = `Sale INR ${el.price}`;
+      product_price.append(current_price);
+
+          for(let i=0;i<5;i++){
+          let img_star = document.createElement("img");
+          img_star.src = "./images/yellow-christmas.jpg";
+          img_star.setAttribute("class","star_image")
+          rating.append(img_star);
+        }
+      priceRating.append(product_price,rating,font_title);
+
+      let infoButton = document.createElement("div");
+
+      
+      cardInfo.append(priceRating,infoButton);
+      product.append(image,cardInfo);
+      row.append(product);
       
     });
   }
