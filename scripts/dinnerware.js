@@ -21,6 +21,7 @@ function display(data) {
 
       let current_price = document.createElement("div");
       current_price.innerHTML = `Sale INR ${el.price}`;
+      current_price.className = "price_tag";
       product_price.append(current_price);
 
           for(let i=0;i<5;i++){
@@ -29,10 +30,12 @@ function display(data) {
           img_star.setAttribute("class","star_image")
           rating.append(img_star);
         }
+
+      font_title.innerText = el.name;
       priceRating.append(product_price,rating,font_title);
 
       let infoButton = document.createElement("div");
-
+      
       
       cardInfo.append(priceRating,infoButton);
       product.append(image,cardInfo);

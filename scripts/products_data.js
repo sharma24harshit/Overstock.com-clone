@@ -12,7 +12,7 @@ let data = [
   {
     image:
       "https://ak1.ostkcdn.com/images/products/is/images/direct/573c841ae5737d28b49df8d82d5eedf9b39fdea1/222-Fifth-Adelaide-16-Piece-Porcelain-Dinnerware-Set%2C-Blue.jpg?imwidth=480&impolicy=medium",
-    name: "boAt 222 Fifth Adelaide 16-Piece Porcelain Dinnerware Set, Blue 333 Pro",
+    name: "Fifth Adelaide 16-Piece Porcelain Dinnerware Set, Blue 333 Pro",
     price: "2990",
     discountPrice: "1699",
     yousave: "2990" - "1639" + " (60%)",
@@ -22,7 +22,7 @@ let data = [
   {
     image:
       "https://ak1.ostkcdn.com/images/products/is/images/direct/f34d085955c2b7f90cbcd0a06b305461263a1905/Vancasso-Navia-Distressed-Vintage-16-piece-Dinnerware-Set.jpg?imwidth=480&impolicy=medium/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_600x.png?v=1625045744",
-    name: "boAt vancasso Navia 16-piece Stoneware Dinnerware Set (Service for 4) 141",
+    name: "Navia 16-piece Stoneware Dinnerware Set (Service for 4) 141",
     price: "4490",
     discountPrice: "1499",
     yousave: "4900" - "1499" + " (67%)",
