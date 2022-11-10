@@ -51,8 +51,6 @@ let Fresh_arr = [{
 }
 ]
 
-console.log(Fresh_arr)
-
 let container = document.getElementById("fresh_js")
 
 Fresh_arr.forEach(({ img, discription }) => {
@@ -61,14 +59,24 @@ Fresh_arr.forEach(({ img, discription }) => {
 
     let image = document.createElement("img")
     image.src = img
-    image.setAttribute("class","imag")
+    image.setAttribute("class", "imag")
 
     let discri = document.createElement("p")
     discri.textContent = discription
-    discri.setAttribute("class","dis")
+    discri.setAttribute("class", "dis")
 
 
     card.append(image, discri)
 
     container.append(card)
 })
+
+let top_btn = document.getElementById("top")
+top_btn.onclick = () => {
+    window.location.href = "store.html"
+}
+
+let Style_Next_btn = document.getElementById("Style_Next_btn")
+Style_Next_btn.onclick = () => {
+    // console.log("suraj")
+}
