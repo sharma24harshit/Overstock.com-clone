@@ -3,7 +3,7 @@
 }
 
 #top {
-  background-image: url("https://ak1.ostkcdn.com/images/products/is/images/direct/844ed34686c62e455fd2090fe29d86412331b092/LZRS-Oak-Wood-Freestanding-Pet-Gate-Wooden-Dog-Gates-for-Doorways-and-The-House-Freestanding-Safety-Fence.jpg?imwidth=480&impolicy=medium");
+  background-image: url("https://ak1.ostkcdn.com/images/products/is/images/direct/3486c74c0af6b3a18124ae63a8a8cf1cd5b62e2a/Velvet-Sofa-Bed-with-Cup-Holders-Sleeper-Couch-Sofa-with-2-Pillows.jpg?imwidth=480&impolicy=medium");
   background-repeat: no-repeat;
   background-size: 90% 90%;
   background-position: 70px 0px;
@@ -122,7 +122,7 @@
   height: 300px;
   width: 100%;
 }
-#Style > div >  p {
+#Style > div > p {
   width: 69%;
 }
 #Style_Next_btn {
@@ -134,4 +134,105 @@
   background-color: rgb(95, 84, 84);
   color: white;
   margin-left: 45%;
+}
+
+#nine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 60%;
+  margin: auto;
+  border: 1px;
+  margin-top: 30px;
+}
+#nine > button {
+  height: 60px;
+  width: 100%;
+  font-size: x-large;
+  box-shadow: rgba(238, 224, 224, 0.15) 1.95px 1.95px 2.6px;
+  border: 0px;
+}
+
+/* store */
+#sort_p {
+  text-align: end;
+  font-weight: bold;
+}
+#sortbyme {
+  height: 30px;
+  width: 10%;
+  font-size: larger;
+  font-weight: bold;
+}
+#top_contaioner {
+  display: flex;
+}
+#top_contaioner > div:nth-child(1) {
+  height: 500px;
+  width: 25%;
+  margin-right: 20px;
+  border: 1px solid;
+}
+#para_icons {
+  height: 20px;
+  width: 80%;
+  border: 1px solid;
+}
+
+#stor_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+#stor_container > div {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.js_img {
+  height: 200px;
+  width: 90%;
+}
+
+/* Product page */
+
+#product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(500px, auto);
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid; */
+}
+#product > div {
+  margin-left: 30px;
+}
+
+.product_img {
+  width: 100%;
+}
+.product_title,
+.product_Rating {
+  font-size: x-large;
+}
+.js_price {
+  font-weight: bold;
+  color: red;
+  font-size: larger;
+}
+.product_btn {
+  height: 40px;
+  width: 40%;
+  border: 0px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  font-size: larger;
+}
+#pet-select {
+  height: 20px;
+  width: 70%;
+  font-size: larger;
+  margin-top: 20px;
 }
