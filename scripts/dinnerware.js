@@ -1,15 +1,20 @@
+// import { svg_image } from "../component/svg_image";
+
 dataProducts = JSON.parse(localStorage.getItem("productsData"));
+
 
 function display(data) {
   let row = document.querySelector(".row");
   document.querySelector(".row").innerHTML = null;
   
     data.forEach(function (el) {
-      
+
       let product = document.createElement("div");
       product.className = "column";
   
-  
+      product.addEventListener("click", function (){
+        store_data(el)
+})
       let image = document.createElement("img");
       image.src = el.image;
       
@@ -35,7 +40,7 @@ function display(data) {
       priceRating.append(product_price,rating,font_title);
 
       let infoButton = document.createElement("div");
-      
+      // infoButton.innerHTML = svg_image();
       
       cardInfo.append(priceRating,infoButton);
       product.append(image,cardInfo);
@@ -43,4 +48,32 @@ function display(data) {
       
     });
   }
+
+  
   display(dataProducts);
+
+ 
+//----------------------------------- Side List Collapsible list--------------------------------------------//
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function  store_data(el) {
+   
+  localStorage.setItem("mydata", JSON.stringify(el));
+  window.location.href = "Productpage.html";
+}
+
+
+
