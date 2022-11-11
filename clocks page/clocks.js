@@ -91,12 +91,42 @@ let clockPage_data = [
       name: "Glitzhome 27.5' D Farmhouse Oversized Wall Clock with Moving Gears Tempered Glass",
       price: "10405",
     },
-    // {
-    //     image:
-    //     "",
-    //   name: "",
-    //   price: "4490",
-    // },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/33596c098be753154e7551e75e0d046b297d0964/FirsTime-%26-Co.-Cooper-Farmhouse-Wall-Clock%2C-American-Crafted%2C-Gray%2C-Plastic%2C-27-x-2-x-27-in.jpg?imwidth=480&impolicy=medium",
+      name: "FirsTime & Co. Cooper Farmhouse Wall Clock, American Crafted, Gray, Plastic, 27 x 2 x 27 in",
+      price: "5222",
+    },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/47ea8eaf22f2f0d3aeed71398ded410957ca9ca4/FirsTime-%26-Co.-Barnes-Wall-Clock.jpg?imwidth=480&impolicy=medium",
+      name: "FirsTime & Co. Barnes Wall Clock, American Crafted, Rustic Brown, Wood, 16 x 1 x 16 in",
+      price: "39751",
+    },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/760b4eb9c4bf4a82f4122efcb1d45f958e490c0b/FirsTime-%26-Co.-Maritime-Farmhouse-Planks-Wall-Clock%2C-Iron%2C-24-x-2-x-24-in%2C-American-Designed.jpg?imwidth=480&impolicy=medium",
+      name: "FirsTime & Co. Maritime Farmhouse Plank Wall Clock",
+      price: "64811",
+    },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/830d4e922b097f132ce8d7931d1e601084ab7c31/FirsTime-%26-Co.%C2%AE-Farmhouse-Shiplap-Gallery-Set%2C-American-Crafted%2C-Black%2C-Plastic%2C-20-x-2-x-20-in.jpg?imwidth=480&impolicy=medium",
+      name: "FirsTime & Co. Farmhouse Shiplap Gallery Set",
+      price: "3628",
+    },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/996f54d355a1a4225710ec41a06560b99b0f52b7/Glitzhome-24%22D-Modern-Metal-Black-and-Golden-Wall-Clock.jpg?imwidth=480&impolicy=medium",
+      name: "Glitzhome 24' D Modern Metal Black and Golden Wall Clock",
+      price: "6567",
+    },
+    {
+        image:
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/181fbd9fc60305af9b6cf87c7322e30ad0e1b7d6/%26-Co.-Black-Emmett-Shiplap-Wall-Clock%2C-Farmhouse%2C-Analog%2C-27-x-2-x-27-in.jpg?imwidth=480&impolicy=medium",
+      name: "& Co. Black Emmett Shiplap Wall Clock, Farmhouse, Analog, 27 x 2 x 27 in",
+      price: "10561",
+    },
   ];
 
 
@@ -105,7 +135,11 @@ let clockPage_data = [
     clockPage_data.forEach( (el) => {
      
     let div = document.createElement("div");
-    div.setAttribute("id" , "clock_card")
+    div.setAttribute("id" , "clock_card");
+    div.addEventListener("click", function (){
+             store_data(el)
+    })
+
     let clock_img = document.createElement("img");
     clock_img.src = el.image;
 
@@ -123,6 +157,13 @@ let clockPage_data = [
     })
 
   }
+  //----------------------------------------------------------------------------//
+function  store_data(el) {
+   
+    localStorage.setItem("mydata", JSON.stringify(el));
+    window.location.href = "Productpage.html";
+}
+  //----------------------------------------------------------------------------//
   append_data()
 
   //----------------------------------- Side List Collapsible list--------------------------------------------//

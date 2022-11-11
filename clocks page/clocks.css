@@ -1,5 +1,6 @@
 #heading{
     margin-bottom: 70px;
+    margin-left: 20px;
 }
 #clocks_container{
     width:70%;
@@ -39,6 +40,7 @@ width:25%;
 height: 500px;
 position: sticky;
 top: 30px;
+margin-left: 20px;
 }
 #sorting_div{
     text-align:right;
