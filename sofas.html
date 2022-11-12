@@ -124,6 +124,165 @@
         #shortbyPrice{
             color: #343333;
         }
+
+        #heading{
+    margin-bottom: 70px;
+    margin-left: 20px;
+}
+#clocks_container{
+    width:70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3 ,300px);
+    grid-template-rows: repeat(auto,500px);
+    gap:20px;
+}
+#clock_card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: auto;
+    height: 100%;
+}
+#clock_card>img{
+    width:100%;
+}
+.price{
+    color: rgba(207, 22, 16, 0.87);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+}
+.clock_title{
+    color: #353538;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+    font-size: 13px;
+}
+#container{
+    display: flex;
+    
+}
+#left_list{
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+width:25%;
+height: 500px;
+position: sticky;
+top: 30px;
+margin-left: 20px;
+}
+#sorting_div{
+    text-align:right;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+#sort_ele{
+  height: 35px;
+  width: 200px;
+  padding:4px 6px;
+}
+#sort_ele > option{
+    padding: 4px 6px;
+   font-size: 15px;
+ 
+}
+/* //-------------------------------------Left side list Collapsible --------------------------- */
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border-left: 0;
+    border-right: 0;
+    border-top:0 ;
+    border-bottom:1px solid rgb(184, 177, 177) ;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: white;
+  }
+  
+  .content {
+    padding: 12px 12px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  /* //---------------------------Inside Collapsible List ---------------------------------------------- */
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#6d6c7a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    border: 2px solid red;
+    background-color: white;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
     </style>
 </head>
 <body>
@@ -382,7 +541,8 @@
             
         </div>
         <div id="div2">
-            <div id="div2List">
+
+            <!-- <div id="div2List">
                <select>
                 <option value="">Types</option>
                 <option value="Sofa">Sofa</option>
@@ -519,7 +679,114 @@
                     <option value="">Chenille</option>
               
                </select>
+            </div> -->
+
+            <div id="left_list">
+                <div >
+                    <button type="button" class="collapsible">Price </button>
+                    <div class="content">
+                        <label class="container">Under INR 7308 (1,189) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">INR 7308 - INR 13704 (12,126) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">INR 13704+  (1,200) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Styles</button>
+                    <div class="content">
+                        <label class="container">Indusrial (229) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Modern & Contemporary (5,121) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Shabby Chic (61) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Vintage (97) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Colors</button>
+                    <div class="content">
+                        <label class="container">Grey <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">White <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Black <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Silver <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Red <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Blue <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Types</button>
+                    <div class="content">
+                        <label class="container">Wall (1,942) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Oversized Wall (11,126) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Mantel (150) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Materials</button>
+                    <div class="content">
+                        <label class="container">Wood (247) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Metals (820) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Stainless Steel (54) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Glass (321) <input type="checkbox" >
+                             <span class="checkmark"></span> </label>
+                        <label class="container">Plastic (82) <input type="checkbox" >
+                             <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Features</button>
+                    <div class="content">
+                        <label class="container">Second Hand (145) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Pendulum (126) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Pedestal (6) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Finishes</button>
+                    <div class="content">
+                        <label class="container">Bronze Finish (40) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Antique (188) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Nickel Finish (18) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+                <div >
+                    <button type="button" class="collapsible">Brands</button>
+                    <div class="content">
+                        <label class="container">Madison Park (7) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">DESIGN ART (12,526) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                        <label class="container">Curata (1,200) <input type="checkbox" >
+                            <span class="checkmark"></span> </label>
+                    </div>
+                </div>
+    
+                
+               
             </div>
+
             <div id="div2Second"></div>
         </div>
     </div>
