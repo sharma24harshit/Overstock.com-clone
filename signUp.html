@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/df10a141e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./navbar.css">
     <style>
         #mainBody{
@@ -22,10 +23,12 @@
 
         #mainDiv>div:nth-child(1){
            /* border: 1px solid purple; */
+           padding: 20px;
            width: 50%;
         }
         #mainDiv>div:nth-child(2){
             /* border: 1px solid rgb(0, 47, 128); */
+            padding: 20px;
             width: 50%;
         }
         #regForm>input{
@@ -72,6 +75,21 @@
        }
        .pColor{
         color: rgb(85, 85, 85);
+       }
+       #btnSignIn{
+        width: 100%;
+        /* height: ; */
+        padding: 10px;
+        margin-top: 20px;
+        background-color: rgb(7, 91, 11);
+        color: white;
+       }
+       #SignInEmail,#SignInPass{
+        width: 95%;
+       }
+       .forgetPass{
+        text-align: center;
+        color: rgb(14, 89, 142);
        }
     </style>
 </head>
@@ -312,11 +330,11 @@
                     <div id="elementDiv">
                         <div id="createPass">
                             <p class="pColor">Create Password</p>
-                            <input type="text" placeholder="Password">
+                            <input type="text" placeholder="Password" id="pass">
                         </div>
                         <div id="confPass">
                             <p class="pColor">Confirm Password</p>
-                            <input type="text" placeholder="Confirm Password">
+                            <input type="text" placeholder="Confirm Password" id="confirmPass">
                         </div>
                     </div>
                     <div id="checkBoxDiv">
@@ -333,7 +351,15 @@
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <h1>Sign In</h1>
+                <p class="pColor">Email Address*</p>
+                <input type="text" placeholder="SignInEmail" id="SignInEmail"> 
+                <p class="pColor">Password*</p>
+                <input type="text" placeholder="Password" id="SignInPass">   
+                <div><button id="btnSignIn"><b>Sign In</b></button></div>  
+                 <p class="forgetPass"><a class="forgetPass" href=""> Forget your password?</a></p>
+            </div>
         </div>
     </div>
 
