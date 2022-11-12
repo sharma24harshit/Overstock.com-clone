@@ -6,114 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #payment_contioner {
-            width: 80%;
-            margin: auto;
-        }
-
-        #fedex {
-            display: flex;
-        }
-
-        #img_fed {
-            height: 50px;
-            width: 100px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-        #para_fed {
-            width: 25%;
-            margin-left: 6px;
-        }
-
-        #contory_select {
-            text-align: end;
-            margin-right: 20px;
-        }
-
-        #Contory {
-            height: 40px;
-            font-size: larger;
-            font-weight: bolder;
-        }
-
-        #return_page {
-            text-decoration: none;
-            font-size: larger;
-            text-decoration: underline;
-            color: rgb(15, 11, 11);
-            margin-left: 10px;
-        }
-
-        #both_form_div {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(auto, auto);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-
-        #para {
-            display: flex;
-            padding-left: 20px;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-            border-radius: 20px;
-            width: 80%;
-            margin: auto;
-        }
-
-        #para>div:nth-child(1) {
-            width: 90%;
-        }
-
-
-        #left_input>form>input {
-            height: 20px;
-            width: 60%;
-            margin-left: 35%;
-            margin-top: 5px;
-        }
-
-        #address {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #address>h1 {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        #card {
-            height: 350px;
-            width: 90%;
-            margin: auto;
-            border: 1px solid;
-            margin-top: 30px;
-        }
-
-        #cards {
-            width: 90%;
-            margin: auto;
-            border: 1px solid;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(auto, auto);
-            gap: 20px;
-        }
-
-        #card>div {
-            border: 1px solid;
-        }
-
-        #card_img {
-            height: 100px;
-            width: 140px;
-        }
-    </style>
+    <link rel="stylesheet" href="./payment.css">
 </head>
 
 <body>
@@ -217,15 +110,71 @@
             </div>
         </div>
 
+
         <div id="card">
-            <img id="card_img" src="https://checkout-ostk.crossborder.fedex.com/static/css/images/pm/visa.png" alt="">
-            <img id="card_img" src="https://checkout-ostk.crossborder.fedex.com/static/css/images/pm/mastercard.png"
-                alt="">
-            <div id="cards">
-                <div></div>
-                <div></div>
+            <div id="card_img">
+                <img id="card_img" src="https://checkout-ostk.crossborder.fedex.com/static/css/images/pm/visa.png"
+                    alt="">
+                <img id="card_img" src="https://checkout-ostk.crossborder.fedex.com/static/css/images/pm/mastercard.png"
+                    alt="">
+            </div>
+            <!-- card img done -->
+            <div id="card_">
+                <div>
+                    <h2>Card Type*</h2>
+                    <h2>Credit Card Number*</h2>
+                    <h2>Expiration Date*</h2>
+                    <h2>Security Code*</h2>
+                </div>
+                <div>
+                    <p id="para_">
+                        <select name="" id="card_Sectelt">
+                            <option value="">select</option>
+                            <option value="">visa</option>
+                            <option value="">mastercard</option>
+                        </select>
+                    </p>
+
+                     <input type="text" class="card_input" id="sectuiryty">
+
+                    <br>
+                    <p id="para__">
+                        <select name="" id="card_Sectelt" >
+                            <option value="sele">select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="" id="card_Sectelt">
+                            <option value="sele">select</option>
+                            <option value="1">2022</option>
+                            <option value="2">2023</option>
+                            <option value="3">2024</option>
+                            <option value="4">2025</option>
+                            <option value="5">2026</option>
+                            <option value="6">2027</option>
+                            <option value="7">2028</option>
+                            <option value="8">2029</option>
+                            <option value="9">2030</option>
+                            <option value="10">2031</option>
+                            <option value="11">2032</option>
+                        </select>
+                    </p>
+                    <input type="text" class="card_input" id="Security">
+                </div>
             </div>
         </div>
+
+        <p id="btn"> <button id="order">Place order</button></p>
 </body>
 
 </html>
