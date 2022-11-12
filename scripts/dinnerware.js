@@ -69,11 +69,28 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function  store_data(el) {
-   
-  localStorage.setItem("mydata", JSON.stringify(el));
-  window.location.href = "Productpage.html";
-}
+//------------------------------------ Sorting -------------------------------------------//
 
+document.getElementById("sort_ele").addEventListener("change" , sort_clicked);
+
+function sort_clicked(){
+    let selected  = document.getElementById("sort_ele").value;
+   
+    if(selected=="lth"){
+       
+        let res = dataProducts.sort(function (a,b){
+            return a.price-b.price;
+        });
+        display(res);
+    }
+    if(selected=="htl"){
+        
+        let res = dataProducts.sort(function (a,b){
+            return b.price-a.price;
+        });
+        display(res);
+    }
+    
+}
 
 
