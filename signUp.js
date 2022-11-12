@@ -9,6 +9,7 @@ let usersDataNew = JSON.parse(localStorage.getItem("usersData")) || [];
 
 
 document.querySelector("#btnCreate").addEventListener("click",function(){
+    console.log(usersDataNew);
    let checkSpe =  checkSpecialChar(pass.value);
    let checkUpp =  checkUpperCase(pass.value);
    let checknNum =  checkNumber(pass.value);
@@ -29,9 +30,15 @@ document.querySelector("#btnCreate").addEventListener("click",function(){
             data.push(obj);
             localStorage.setItem("usersData",JSON.stringify(data));
           alert("SignUp successful");
+           email.value = "";
+           pass.value = "";
+           confPassword.value = "";
+          usersDataNew = JSON.parse(localStorage.getItem("usersData")) || [];
         }else{
             alert("password does not match");
         }
+    }else if(checkUser(usersDataNew)===false){
+          alert("User already exists");
     }else{
         alert("Password must have atleats one special charactor one Uppercase charactor one number and length must be greater than 8");
     }
@@ -83,15 +90,48 @@ function checkNumber(pass){
     return flag;
 }
 
+let emailcheck = document.querySelector("#Remail");
+
 function checkUser(nData){
     let flag = true;
-    nData.forEach(function(el,i){
-        let userEmail = el.email;
-        if(userEmail===email.value.trim()){
-            return false;
+    for(let i=0; i<nData.length; i++){
+        if(nData[i].email===emailcheck.value){
+            flag = false;
+            // console.log(nData[i].email,emailcheck.value)
+            break;
         }
-    });    
+    }
     return flag;
 }
 
 // console.log(checkUser(usersDataNew))
+
+// >>>>>>>>>>>>>>>>>>>>>>>>> code for SignIn <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+let sgnMail = document.querySelector("#SignInEmail");
+let sgnPass = document.querySelector("#SignInPass");
+
+document.querySelector("#btnSignIn").addEventListener("click",function(){
+     if(sgnMail.value.trim()!=="" && sgnPass.value.trim()!==""){
+       if(checkUserSign(usersDataNew)){
+          alert("SignedIn successfully");
+          sgnMail.value = "";
+          sgnPass.value ="";
+       }else{
+         alert("Invalid Credentials");
+       }
+     }
+});
+
+
+function checkUserSign(nData){
+    let flag = false;
+    for(let i=0; i<nData.length; i++){
+        if(nData[i].email===sgnMail.value.trim() && nData[i].pass===sgnPass.value.trim()){
+            // flag = false;
+            // console.log(nData[i].email,sgnMail.value.trim())
+            return true;
+        }
+    }
+    return flag;
+}
