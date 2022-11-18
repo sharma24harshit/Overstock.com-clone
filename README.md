@@ -1,6 +1,6 @@
 # excellent-noise-5475
 
-This is a group project to build "Home Decor" website. Four members equillay contributed in this project in the leadership of Harshit.
+This is a group project to build "Home Decor" website. Four members equally contributed in this project in the leadership of Harshit.
 I thanks all the contributors of the project who made great effort in completing this project on time.
 
 1.`Harshit sharma`
